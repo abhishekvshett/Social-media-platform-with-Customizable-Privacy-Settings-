@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Social Media Platform</h1>
+    
+    <!-- Profile Settings -->
+    <section class="profile-settings">
+      <h2>Profile Privacy Settings</h2>
+      <label for="profile-visibility">Profile Visibility:</label>
+      <select id="profile-visibility">
+        <option value="public">Public</option>
+        <option value="friends">Friends Only</option>
+        <option value="private">Private</option>
+      </select>
+    </section>
+    
+    <!-- Post Section -->
+    <section class="post-creation">
+      <h2>Create a Post</h2>
+      <textarea id="post-content" placeholder="What's on your mind?" rows="4"></textarea>
+      <label for="post-privacy">Post Privacy:</label>
+      <select id="post-privacy">
+        <option value="public">Public</option>
+        <option value="friends">Friends Only</option>
+        <option value="private">Private</option>
+      </select>
+      <button id="post-btn">Post</button>
+    </section>
+    
+    <!-- Feed Section -->
+    <section class="feed">
+      <h2>Your Feed</h2>
+      <ul id="post-list"></ul>
+    </section>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
